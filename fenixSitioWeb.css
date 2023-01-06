@@ -1,0 +1,704 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    overflow-x: hidden; 
+}
+
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+}
+
+/* hide scrollbar but allow scrolling */
+.pagina-principal-panel-empresas-logos-contenedor {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.pagina-principal-panel-empresas-logos-contenedor::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+/*Pagina Inicial*/
+
+.contenedor-1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-de-fondo-contenedor-1 {
+    width: 100vw;
+    height: 90rem;
+    background: url(newsimage1.jpg) center no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pagina-inicial-logo-contenedor {
+    width: 10rem;
+    max-width: 90%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    border-radius: 50%;
+}
+
+.pagina-inicial-logo {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.boton {
+    width: 13rem;
+    height: 3rem;
+    background-color: #434343;
+    background-color: #9b2226;
+    /* background: linear-gradient(to right, #f85032, #e73827); 
+    background: linear-gradient(to right, #1d4350, #a43931); 
+    background: linear-gradient(to right, #8e0e00, #1f1c18);  */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border-radius: 15px;
+    box-shadow: 1px 25px 16px -8px rgba(0,0,0,0.71);
+    transition: all .4s;
+}
+
+.boton:hover {
+    width: 14rem;
+}
+
+.boton:active {
+    opacity: 70%;
+}
+
+.texto-boton {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+.pagina-inicial-boton {
+    z-index: 1;
+    margin-top: 3rem;
+}
+
+.pagina-inicial-informacion-contenedor {
+    width: 30rem;
+    max-width: 90%;
+    height: 15rem;
+    background-color: #2A2B38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    /* border-top: none;
+    border-bottom: none; */
+    box-sizing: border-box;
+}
+
+.pagina-inicial-codigo-cliente-form {
+    margin-right: 2.5rem;
+}
+
+
+.lock-icon {
+    font-size: 2rem;
+    margin-right: .5rem;
+    color: #FDE9A5;
+}
+
+.view-icon {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: .7rem;
+    position: absolute;
+    cursor: pointer;
+    color: #FDE9A5;
+}
+
+.unview-icon {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: .6rem;
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+    color: #FDE9A5;
+
+
+}
+.login-view-icon {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: .7rem;
+    position: absolute;
+    cursor: pointer;
+    color: #FDE9A5;
+
+}
+
+.login-unview-icon {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: .6rem;
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+
+    color: #FDE9A5;
+
+}
+
+.codigo-cliente-input {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.usuario-input {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.clave-input {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+
+.contenedor-2 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: none;
+    background-color: #fff;
+}
+
+.pagina-login-texto {
+    color: #fff;
+    font-size: 2.5rem;
+}
+/*Fin de la Pagina Inicial*/
+
+
+
+.checkbox:checked ~ .contenedor .contenedor-1 {
+    display: flex;
+}
+
+.checkbox:checked ~ .contenedor .contenedor-2 {
+    display: flex;
+}
+
+.checkbox:checked ~ .contenedor .contenedor-1 .imagen-de-fondo-contenedor-1 .pagina-inicial-boton {
+    display: none;
+}
+
+
+
+
+/*Pagina Login*/
+.imagen-de-fondo-contenedor-2 {
+    position: absolute;
+    width: 100vw;
+    height: 90rem;
+    background: linear-gradient(to top, rgba(34, 32, 41, .6), rgba(34, 32, 41, .1)),
+    url(newsimage2.jpg) center no-repeat;    
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+
+.contenedor-2-contenido {
+    height: 90rem;
+    display: grid;
+
+    grid-template-areas: "firstpagebox2 firstpagebox2"
+                         "firstpagebox1 firstpagebox1";
+}
+
+.segunda-pagina-box-1 {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /*Important - Without this, margin-top would cause the other grid box to change size*/
+
+    z-index: 1;
+    grid-area: firstpagebox2;
+}
+
+.pagina-login-fenix-logo-contenedor {
+    width: 100vw;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 35rem;
+    position: absolute;
+}
+
+.pagina-login-fenix-logo {
+    width: 6rem;
+    border-radius: 50%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.pagina-login-logo-contenedor {
+    width: 30rem;
+    max-width: 90%;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    background-color: #2A2B38; 
+    position: absolute; /*Important - Without this, margin-top would cause the other grid box to change size*/
+    margin-top: 11rem;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: none;
+   
+}
+
+.pagina-login-logo {
+    width: 8rem;
+    background: url(hubspot-1.svg) center no-repeat;
+    background-size: contain;
+    background-position: 50% 50%; 
+}
+
+.pagina-login-nombre-texto {
+    position: absolute;
+    margin-top: 30.5rem;
+    font-size: 2.7rem;
+    letter-spacing: .1rem;
+    background-color: #2A2B38;
+    box-sizing: border-box;
+    border: 2px solid #9b2226;
+    border-top: none;
+    border-bottom: none;
+    box-sizing: border-box;
+    color: #fff;
+    width: 30rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'El Messiri', sans-serif;
+    font-family: Geneva, Tahoma, sans-serif;
+
+    border: 2px solid #fff;
+
+}
+
+.segunda-pagina-box-2 {
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative; /*Important - Without this, margin-top would cause the other grid box to change size*/
+
+    z-index: 0;
+
+    grid-area: firstpagebox1;
+}
+
+.pagina-login-informacion-contenedor {
+     width: 30rem;
+    max-width: 90%;
+    height: 15rem;
+    background-color: #2A2B38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    position: absolute; /*Important - Without this, margin-top would cause the other grid box to change size*/
+    border: 2px solid #9b2226;
+    border-top: none;
+    border-bottom: none;
+    box-sizing: border-box;
+
+    border: 2px solid #fff;
+
+}
+
+.pagina-login-usuario-form {
+    margin-right: 2.5rem;
+
+}
+
+.pagina-login-clave-form {
+    margin-right: 2.5rem;
+
+}
+
+.pagina-login-usuario-form {
+    margin-bottom: 2rem;
+}
+
+.user-icon {
+    font-size: 2rem;
+    margin-right: .5rem;
+    color: #FDE9A5;
+
+}
+
+.pagina-login-boton {
+    margin-top: 23rem;
+    z-index: 100;
+    position: absolute;
+}
+
+/*Fin de la Pagina Login*/
+
+/* Pagina Principal */
+
+.login-boton-click:checked ~ .contenedor .contenedor-3 {
+    display: flex;
+} 
+
+.contenedor-3 {
+    width: 100vw;
+    height: 90rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: #434343;
+    z-index: 2;
+    display: none;
+}
+
+.contenedor-3-contenido {
+    height: 100%;
+    width: min(95%, 110rem);
+    display: grid;
+
+    grid-template-areas: "tercerapaginabox1 tercerapaginabox1"
+                         "tercerapaginabox1 tercerapaginabox1"
+                         "tercerapaginabox1 tercerapaginabox1"
+                         "tercerapaginabox2 tercerapaginabox2"
+                         "tercerapaginabox3 tercerapaginabox3"
+                         "tercerapaginabox3 tercerapaginabox3";
+}
+
+.tercera-pagina-box-1 {
+    grid-area: tercerapaginabox1;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-block-end: 4rem;
+}
+
+.pagina-principal-fenix-logo-contenedor {
+    width: 100%;
+    height: 7rem;
+    background-color: beige;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.pagina-principal-fenix-logo {
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.panel-de-empresas-texto-contenedor {
+    width: 100%;
+    height: 5rem;
+    background-color: purple;
+    position: absolute;
+    margin-top: 9rem;
+    z-index: 1;
+}
+
+.panel-de-empresas-titulo {
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif;
+    /* font-family: Geneva, Tahoma, sans-serif; */
+}
+
+.pagina-principal-panel-empresas-contenedor {
+    width: 100%;
+    height: 36rem;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 9rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pagina-principal-panel-empresas-logos-contenedor {
+    width: 90rem;
+    height: 30rem;
+    background-color: pink;
+    overflow-x: scroll;
+}
+
+.pagina-principal-panel-empresas-logos-contenedor-row-1 {
+    width: 100rem;
+    min-width: 100%;
+    height: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid #000;
+}
+
+.empresas-flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.empresas-logo-wrapper {
+    width: 12rem;
+    height: 9rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    position: relative;
+    padding: 5rem;
+
+}
+
+.empresas-logo-wrapper::after {
+    content: '';
+    width: .1rem;
+    height: 10rem;
+    background-color: #434343;
+    position: absolute;
+    margin-right: -20rem;
+    margin-top: 4rem;
+}
+
+.empresas-logo-wrapper-5::after, .empresas-logo-wrapper-10::after {
+    display: none;
+}
+
+.empresas-logo-wrapper:hover {
+    border: 3px solid #9b2226;
+}
+
+.empresa-seleccion-1:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-1 .empresas-logo-wrapper {
+    border: 3px solid #FDE9A5;
+}
+
+.empresa-seleccion-2:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-2 .empresas-logo-wrapper {
+    border: 3px solid #FDE9A5;
+}
+
+.empresa-seleccion-3:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-3 .empresas-logo-wrapper {
+    border: 3px solid #FDE9A5;
+}
+
+.empresa-seleccion-4:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-4 .empresas-logo-wrapper {
+    border: 3px solid #FDE9A5;
+}
+
+.empresa-seleccion-5:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-5 .empresas-logo-wrapper {
+    border: 3px solid #FDE9A5;
+}
+
+.empresa-seleccion-6:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-6 .empresas-logo-wrapper {
+    border: 3px solid #FDE9A5;
+}
+
+.empresa-seleccion-7:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-7 .empresas-logo-wrapper {
+    border: 3px solid #FDE9A5;
+}
+
+.empresa-seleccion-8:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-8 .empresas-logo-wrapper {
+    border: 3px solid #FDE9A5;
+}
+
+.empresa-seleccion-9:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-9 .empresas-logo-wrapper {
+    border: 3px solid #FDE9A5;
+}
+
+.empresa-seleccion-10:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-10 .empresas-logo-wrapper {
+    border: 3px solid #FDE9A5;
+}
+
+
+.pagina-principal-empresas-logos {
+    width: 10rem;
+}
+
+.logo-10 {
+    background: url(xm-news-1.svg) center no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+    width: 9rem;
+    height: 9rem;
+}
+
+.nombre-de-empresas-texto {
+    font-size: 1.6rem;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+}
+
+
+.pagina-principal-panel-empresas-logos-contenedor-row-2 {
+    width: 100rem;
+    min-width: 100%;
+    height: 50%;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.pagina-principal-numero-logos-seleccionados-contenedor {
+    width: 15rem;
+    height: 30rem;
+    background-color: #000;
+    
+}
+
+.tercera-pagina-box-2 {
+    grid-area: tercerapaginabox2;
+    background-color: green;
+    position: relative;
+}
+
+.tercera-pagina-box-3 {
+    grid-area: tercerapaginabox3;
+    background-color: orange;
+    position: relative;
+}
+
+/* Fin de la Pagina Principal */
+
+/*Proteccion para codigo de cliente*/
+
+    /*Para pagina inicial*/
+input.codigo-cliente-input {
+    -webkit-text-security: none;
+  }
+
+.ver:checked ~ .contenedor .contenedor-1 .imagen-de-fondo-contenedor-1 .pagina-inicial-informacion-contenedor .pagina-inicial-codigo-cliente-form .codigo-cliente-input {
+    -webkit-text-security: disc;
+}
+
+.ver:checked ~ .contenedor .contenedor-1 .imagen-de-fondo-contenedor-1 .pagina-inicial-informacion-contenedor .pagina-inicial-codigo-cliente-form .pagina-inicial-ver .unview-icon {
+    visibility: visible;
+}
+
+.ver:checked ~ .contenedor .contenedor-1 .imagen-de-fondo-contenedor-1 .pagina-inicial-informacion-contenedor .pagina-inicial-codigo-cliente-form .pagina-inicial-ver .view-icon {
+    visibility: hidden;
+}
+
+
+    /*Para pagina login*/
+.ver2:checked ~ .contenedor .contenedor-2 .imagen-de-fondo-contenedor-2 .contenedor-2-contenido .segunda-pagina-box-2 .pagina-login-informacion-contenedor .pagina-login-clave-form .clave-input{
+    -webkit-text-security: disc;
+}
+
+.ver2:checked ~ .contenedor .contenedor-2 .imagen-de-fondo-contenedor-2 .contenedor-2-contenido .segunda-pagina-box-2 .pagina-login-informacion-contenedor .pagina-login-clave-form .pagina-login-ver .login-unview-icon{
+    visibility: visible;
+}
+
+.ver2:checked ~ .contenedor .contenedor-2 .imagen-de-fondo-contenedor-2 .contenedor-2-contenido .segunda-pagina-box-2 .pagina-login-informacion-contenedor .pagina-login-clave-form .pagina-login-ver .login-view-icon{
+    visibility: hidden;
+}
+
+/*Proteccion para codigo de cliente*/
+
+
+/* Responsiveness */
+
+@media (max-width: 1100px) {
+    .contenedor-3 {
+        height: 140rem;
+    }
+    
+    .contenedor-3-contenido {
+        height: 100%;
+        width: min(95%, 110rem);
+        display: grid;
+    
+        grid-template-areas: "tercerapaginabox1"
+                             "tercerapaginabox1"
+                             "tercerapaginabox1"
+                             "tercerapaginabox2"
+                             "tercerapaginabox3"
+                             "tercerapaginabox3";
+    }
+
+
+    .pagina-principal-panel-empresas-contenedor {
+        height: 61rem;
+    }
+
+    .panel-de-empresas-texto-contenedor {
+        margin-top: 7rem;
+    }
+
+
+    .pagina-principal-panel-empresas-logos-contenedor {
+        width: 100%;
+        height: 41rem;
+        margin-top: 2rem;
+    }
+    
+    .pagina-principal-numero-logos-seleccionados-contenedor {
+        width: 100%;
+        height: 15rem;
+        background-color: #000;
+    }
+       
+}
+
+/* End of Responsiveness*/
