@@ -41,7 +41,8 @@ body {
 .imagen-de-fondo-contenedor-1 {
     width: 100vw;
     height: 90rem;
-    background: (Fiverr-Fenix-Project/Fenix Images/newsimage1.jpg) center no-repeat;
+/*     background: (Fiverr-Fenix-Project/Fenix Images/newsimage1.jpg) center no-repeat; */
+    background: (newsimage1.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%; 
     display: flex;
