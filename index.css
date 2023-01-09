@@ -41,7 +41,7 @@ body {
 .imagen-de-fondo-contenedor-1 {
     width: 100vw;
     height: 90rem;
-    background: url(newsimage1.jpg) center no-repeat;
+    background: url(Fenix Images/newsimage1.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%; 
     display: flex;
@@ -252,7 +252,7 @@ input[type=number] {
     width: 100vw;
     height: 90rem;
     background: linear-gradient(to top, rgba(34, 32, 41, .6), rgba(34, 32, 41, .1)),
-    url(newsimage2.jpg) center no-repeat;    
+    url(Fenix Images/newsimage2.jpg) center no-repeat;    
     background-size: cover;
     background-position: 50% 50%; 
 }
@@ -312,7 +312,7 @@ input[type=number] {
 
 .pagina-login-logo {
     width: 8rem;
-    background: url(hubspot-1.svg) center no-repeat;
+    background: url(Fenix Images/hubspot-1.svg) center no-repeat;
     background-size: contain;
     background-position: 50% 50%; 
 }
@@ -592,7 +592,7 @@ input[type=number] {
 }
 
 .logo-10 {
-    background: url(xm-news-1.svg) center no-repeat;
+    background: url(Fenix Images/xm-news-1.svg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%; 
     width: 9rem;
