@@ -217,12 +217,84 @@
                         </div>
 
                         <div class="pagina-principal-numero-logos-seleccionados-contenedor">
+                            <div class="pagina-principal-numero-logos-seleccionados-wrapper">
+                                <h2 class="empresas-seleccionadas-titulo">Empresas Seleccionadas:</h2>
 
+                                <div class="empresas-seleccionadas-numero-wrapper">
+                                    <p class="empresas-seleccionadas-numero">1</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tercera-pagina-box-2"></div>
-                <div class="tercera-pagina-box-3"></div>
+                <div class="tercera-pagina-box-2">
+                    <div class="pagina-principal-dropdown-wrapper">
+                        <label for="nombres-usuarios" class="pagina-principal-dropdown-menu">Usuario:</label>
+                        <select name="nombres-usuarios" id="nombres-usuarios">
+                            <option value="Usuario1">Seleccione un Usuario</option>
+                            <option value="Usuario1">Usuario 1</option>
+                            <option value="Usuario2">Usuario 2</option>
+                            <option value="Usuario3">Usuario 3</option>
+                            <option value="Usuario4">Usuario 4</option>
+                            <option value="Usuario5">Usuario 5</option>
+                            <option value="Usuario6">Usuario 6</option>
+                        </select>
+                    </div>
+                    
+                    <input type="checkbox" class="pagina-principal-boton-check" id="botoncheck" hidden>
+                    <div class="pagina-principal-boton-y-popup-wrapper">
+                        <p class="popup-texto">Agregar email</p>
+
+                        <label for="botoncheck" class="pagina-principal-boton-label">
+                            <p class="usuario-boton">+ Usuario</p>
+                        </label>
+
+                        <form class="usuario-popup-email-form">
+                            <input type="email" placeholder="Email" class="usuario-popup-email">
+                        </form>
+                    </div>
+                </div>
+                <div class="tercera-pagina-box-3">
+                    <div class="pagina-principal-dashboard-contenedor">
+                        <h2 class="dashboard-titulo">Dashboard Disponibles:</h2>
+
+                        <div class="pagina-principal-dashboard-contenido-wrapper">
+                            <fieldset class="dashboard-opciones">
+                                <span>    
+                                    <input type="checkbox" id="opciones1">
+                                    <label for="opciones1" class="opciones-texto">Ventas, Unidades, y Montos</label>
+                                </span>    
+                                
+                                <span>    
+                                    <input type="checkbox" id="opciones2">
+                                    <label for="opciones2" class="opciones-texto">Utilidades</label>
+                                </span>    
+                                    
+                                <span>    
+                                    <input type="checkbox" id="opciones3">
+                                    <label for="opciones3" class="opciones-texto">Cartera de Clientes</label>
+                                </span>    
+                                    
+                                <span>    
+                                    <input type="checkbox" id="opciones4">
+                                    <label for="opciones4" class="opciones-texto">Inventarios</label>
+                                </span>    
+                                    
+                                <span>    
+                                    <input type="checkbox" id="opciones5">
+                                    <label for="opciones5" class="opciones-texto">Top N</label>
+                                </span>   
+
+                                <span>    
+                                    <input type="checkbox" id="opciones6">
+                                    <label for="opciones6" class="opciones-texto">Acumulado de Ventas</label>
+                                </span>    
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Grabar" class="grabar-boton"/>
+                </div>
             </div>
         </div>
     </div>
