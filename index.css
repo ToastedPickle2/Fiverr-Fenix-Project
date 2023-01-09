@@ -312,6 +312,7 @@ input[type=number] {
 
 .pagina-login-logo {
     width: 8rem;
+    height: 8rem;
     background: url(Fenix Images/hubspot-1.svg) center no-repeat;
     background-size: contain;
     background-position: 50% 50%; 
