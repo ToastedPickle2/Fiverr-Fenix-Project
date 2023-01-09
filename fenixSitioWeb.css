@@ -166,14 +166,17 @@ body {
     position: absolute;
     visibility: hidden;
     cursor: pointer;
-
     color: #FDE9A5;
-
 }
 
 .codigo-cliente-input {
     padding: 1rem;
     font-size: 1.6rem;
+    outline: none;
+}
+
+.codigo-cliente-input:focus {
+    outline: 1px solid #FDE9A5;
 }
 
 .usuario-input {
@@ -181,9 +184,17 @@ body {
     font-size: 1.6rem;
 }
 
+.usuario-input:focus {
+    outline: 1px solid #FDE9A5;
+}
+
 .clave-input {
     padding: 1rem;
     font-size: 1.6rem;
+}
+
+.clave-input:focus {
+    outline: 1px solid #FDE9A5;
 }
 
 input::-webkit-outer-spin-button,
@@ -409,7 +420,7 @@ input[type=number] {
 
 .contenedor-3-contenido {
     height: 100%;
-    width: min(95%, 110rem);
+    width: min(95%, 120rem);
     display: grid;
 
     grid-template-areas: "tercerapaginabox1 tercerapaginabox1"
@@ -427,6 +438,7 @@ input[type=number] {
     flex-direction: column;
     position: relative;
     padding-block-end: 4rem;
+    padding-block-end: 15rem;
 }
 
 .pagina-principal-fenix-logo-contenedor {
@@ -448,7 +460,7 @@ input[type=number] {
     height: 5rem;
     background-color: purple;
     position: absolute;
-    margin-top: 9rem;
+    margin-top: 8rem;
     z-index: 1;
 }
 
@@ -456,26 +468,30 @@ input[type=number] {
     font-size: 2rem;
     color: #fff;
     font-family: 'El Messiri', sans-serif;
-    /* font-family: Geneva, Tahoma, sans-serif; */
 }
 
 .pagina-principal-panel-empresas-contenedor {
     width: 100%;
-    height: 36rem;
-    background-color: #fff;
+    height: 80%;
     position: absolute;
-    margin-top: 9rem;
+    margin-top: 7.5rem;
+    margin-top: 10rem;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .pagina-principal-panel-empresas-logos-contenedor {
-    width: 90rem;
-    height: 30rem;
+    width: 104rem;
+    height: 90%;
     background-color: pink;
     overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .pagina-principal-panel-empresas-logos-contenedor-row-1 {
@@ -494,22 +510,22 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
 }
 
 .empresas-logo-wrapper {
-    width: 12rem;
-    height: 9rem;
+    width: 10rem;
+    height: 7rem;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     box-sizing: border-box;
     position: relative;
-    padding: 5rem;
-
+    padding: 4rem;
+    margin-top: 1rem;
 }
 
 .empresas-logo-wrapper::after {
@@ -572,7 +588,7 @@ input[type=number] {
 
 
 .pagina-principal-empresas-logos {
-    width: 10rem;
+    width: 8rem;
 }
 
 .logo-10 {
@@ -597,26 +613,201 @@ input[type=number] {
     background-color: yellow;
     display: flex;
     justify-content: space-around;
-    align-items: center
+    align-items: center;
 }
 
 .pagina-principal-numero-logos-seleccionados-contenedor {
     width: 15rem;
     height: 30rem;
-    background-color: #000;
-    
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #434343;
+}
+
+.pagina-principal-numero-logos-seleccionados-wrapper {
+    width: 15rem;
+    height: 12rem;
+    /* max-height: 90%; */
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empresas-seleccionadas-titulo {
+    font-size: 1.8rem;
+    margin: 0;
+    line-height: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.empresas-seleccionadas-numero-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #fff;
+    margin-bottom: 1.5rem;
+}
+
+.empresas-seleccionadas-numero {
+    font-size: 2rem;
+}
+
+.pagina-principal-check-icon {
+    font-size: 1.8rem;
 }
 
 .tercera-pagina-box-2 {
     grid-area: tercerapaginabox2;
     background-color: green;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.pagina-principal-dropdown-wrapper {
+    width: 52%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pagina-principal-dropdown-menu {
+    font-size: 1.6rem;
+    font-weight: 800;
+    background-color: red;
+    width: 18%;
+}
+
+#nombres-usuarios {
+    width: 75%;
+    height: 4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 1px solid #FDE9A5;
+    outline: none;
+    border-radius: 7px;
+}
+
+.pagina-principal-boton-y-popup-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-color: antiquewhite;
+    width: 45%;
+    height: 70%;
+}
+
+.popup-texto {
+    font-size: 1.3rem;
+    margin: 0;
+    background-color: lightgray;
+    width: 10rem;
+    padding: .5rem;
+    visibility: hidden;
+}
+
+.usuario-boton {
+    font-size: 1.5rem;
+    background-color: #fff;
+    width: 9rem;
+    padding: 1.2rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: -1rem;
+    cursor: pointer;
+}
+
+.usuario-popup-email {
+    width: 22rem;
+    height: 3rem;
+    max-width: 90%;
+    outline: none;
+    visibility: hidden;
+    border-radius: 7px;
+    border: 1px solid #434343;
+}
+
+
+
+.pagina-principal-boton-check:checked ~ .pagina-principal-boton-y-popup-wrapper .popup-texto {
+    visibility: visible;
+}
+
+.pagina-principal-boton-check:checked ~ .pagina-principal-boton-y-popup-wrapper .usuario-popup-email-form .usuario-popup-email {
+    visibility: visible;
+}
+
+
 
 .tercera-pagina-box-3 {
     grid-area: tercerapaginabox3;
     background-color: orange;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagina-principal-dashboard-contenedor {
+    width: 60%;
+    height: 75%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard-titulo {
+    background-color: #fff;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.pagina-principal-dashboard-contenido-wrapper {
+    width: 100%;
+    height: 88%;
+    background-color: blueviolet;
+    overflow-y: scroll;
+}
+
+.grabar-boton {
+    height: 14%;
+    width: 10rem;
+}
+
+.dashboard-opciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 100%;
+}
+
+.opciones-texto {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+span input {
+    cursor: pointer;
+} 
+
+span input:checked {
+    cursor: auto;
 }
 
 /* Fin de la Pagina Principal */
@@ -658,12 +849,90 @@ input.codigo-cliente-input {
 
 
 /* Responsiveness */
+@media (min-width: 1100px) {
+    .pagina-principal-dropdown-menu {
+        text-align:center;
+    }
+}
 
 @media (max-width: 1100px) {
-    .contenedor-3 {
+    /* .contenedor-3 {
         height: 140rem;
-    }
+    } */
     
+    .contenedor-3-contenido {
+        height: 100%;
+        width: min(95%, 110rem);
+        /* display: grid;
+    
+        grid-template-areas: "tercerapaginabox1"
+                             "tercerapaginabox1"
+                             "tercerapaginabox1"
+                             "tercerapaginabox2"
+                             "tercerapaginabox3"
+                             "tercerapaginabox3"; */
+    }
+
+    .pagina-principal-numero-logos-seleccionados-contenedor {
+        width: 12rem;
+    }
+
+    .pagina-principal-numero-logos-seleccionados-wrapper {
+        width: 12rem;
+    }
+
+    .empresas-seleccionadas-titulo {
+        font-size: 1.5rem;
+    }
+
+    .pagina-principal-dropdown-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        height: 30%;
+        width: 55%;
+    }
+
+    .pagina-principal-dropdown-menu {
+        width: 100%;
+        text-align: flex-start;
+    }       
+
+    #nombres-usuarios {
+        width: 90%;
+    }
+
+    .pagina-principal-boton-y-popup-wrapper {
+        height: 60%;
+        justify-content: space-between;
+    }
+
+    .usuario-boton {
+        margin-top: 7rem;
+    }
+
+    .popup-texto {
+        margin-top: 4rem;
+        position: absolute;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    .imagen-de-fondo-contenedor-2 {
+        background-position: 20% 100%; 
+    }
+
+
+    .empresas-seleccionadas-titulo {
+        font-size: 1.4rem;
+    }
+
+    .contenedor-3 {
+        height: 130rem;
+    }
+
     .contenedor-3-contenido {
         height: 100%;
         width: min(95%, 110rem);
@@ -677,28 +946,27 @@ input.codigo-cliente-input {
                              "tercerapaginabox3";
     }
 
-
-    .pagina-principal-panel-empresas-contenedor {
-        height: 61rem;
+    .tercera-pagina-box-1 {
+        padding-block-end: 4rem;
     }
 
-    .panel-de-empresas-texto-contenedor {
+    .pagina-principal-boton-y-popup-wrapper {
+        height: 60%;
+        justify-content: space-between;
+    }
+
+    .usuario-boton {
+        /* margin-bottom: -10rem; */
+        /* position: absolute; */
+        margin-top: 10.5rem;
+
+    }
+
+    .popup-texto {
         margin-top: 7rem;
+        position: absolute;
     }
-
-
-    .pagina-principal-panel-empresas-logos-contenedor {
-        width: 100%;
-        height: 41rem;
-        margin-top: 2rem;
-    }
-    
-    .pagina-principal-numero-logos-seleccionados-contenedor {
-        width: 100%;
-        height: 15rem;
-        background-color: #000;
-    }
-       
 }
+
 
 /* End of Responsiveness*/
