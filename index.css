@@ -41,7 +41,7 @@ body {
 .imagen-de-fondo-contenedor-1 {
     width: 100vw;
     height: 90rem;
-    background: (FenixImages/newsimage1.jpg) center no-repeat;
+    background: url("FenixImages/newsimage1.jpg") center no-repeat;
     background-size: cover;
     background-position: 50% 50%; 
     display: flex;
@@ -252,7 +252,7 @@ input[type=number] {
     width: 100vw;
     height: 90rem;
     background: linear-gradient(to top, rgba(34, 32, 41, .6), rgba(34, 32, 41, .1)),
-    url(.../Fenix Images/newsimage2.jpg) center no-repeat;    
+    url('FenixImages/newsimage2.jpg') center no-repeat;    
     background-size: cover;
     background-position: 50% 50%; 
 }
@@ -312,7 +312,7 @@ input[type=number] {
 
 .pagina-login-logo {
     width: 8rem;
-    background: url(Fenix Images/hubspot-1.svg) center no-repeat;
+    background: url('hubspot-1.svg') center no-repeat;
     background-size: contain;
     background-position: 50% 50%; 
 }
@@ -413,14 +413,14 @@ input[type=number] {
     position: absolute;
     display: flex;
     justify-content: center;
-    background-color: #434343;
+    background-color: #fff;
     z-index: 2;
     display: none;
 }
 
 .contenedor-3-contenido {
     height: 100%;
-    width: min(95%, 120rem);
+    width: min(100%, 130rem);
     display: grid;
 
     grid-template-areas: "tercerapaginabox1 tercerapaginabox1"
@@ -433,34 +433,35 @@ input[type=number] {
 
 .tercera-pagina-box-1 {
     grid-area: tercerapaginabox1;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-block-end: 4rem;
-    padding-block-end: 15rem;
+    padding-block-end: 20rem;
 }
 
 .pagina-principal-fenix-logo-contenedor {
     width: 100%;
     height: 7rem;
-    background-color: beige;
+    background-color: #2f3e46;
     position: absolute;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 
 .pagina-principal-fenix-logo {
-    width: 6rem;
+    width: 5rem;
     border-radius: 50%;
+    margin-left: 2rem;
 }
 
 .panel-de-empresas-texto-contenedor {
     width: 100%;
     height: 5rem;
-    background-color: purple;
+    background-color: #003049;
     position: absolute;
-    margin-top: 8rem;
+    margin-top: 7.2rem;
     z-index: 1;
 }
 
@@ -468,6 +469,7 @@ input[type=number] {
     font-size: 2rem;
     color: #fff;
     font-family: 'El Messiri', sans-serif;
+    margin-left: 2rem;
 }
 
 .pagina-principal-panel-empresas-contenedor {
@@ -475,30 +477,35 @@ input[type=number] {
     height: 80%;
     position: absolute;
     margin-top: 7.5rem;
-    margin-top: 10rem;
+    margin-top: 11rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-wrap: nowrap;
+    background-color: #fff;
 }
 
 .pagina-principal-panel-empresas-logos-contenedor {
     width: 104rem;
-    height: 90%;
-    background-color: pink;
+    width: 115rem;
+    height: 100%;
+    /* background-color: pink; */
     overflow-x: scroll;
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-right: 4px solid #000;
 }
+
 
 .pagina-principal-panel-empresas-logos-contenedor-row-1 {
     width: 100rem;
     min-width: 100%;
     height: 50%;
-    background-color: aqua;
+    background-color: none;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -517,6 +524,7 @@ input[type=number] {
     width: 10rem;
     height: 7rem;
     background-color: #fff;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,16 +534,22 @@ input[type=number] {
     position: relative;
     padding: 4rem;
     margin-top: 1rem;
+    box-shadow: -2px 10px 21px -3px rgba(0,0,0,0.5);
+    box-shadow: -2px 8px 7px 2px rgba(229,229,229,1);
+
+    
 }
 
 .empresas-logo-wrapper::after {
     content: '';
-    width: .1rem;
+    width: .2rem;
     height: 10rem;
+    height: 22rem;
     background-color: #434343;
     position: absolute;
-    margin-right: -20rem;
-    margin-top: 4rem;
+    margin-right: -22.3rem; /*test*/
+    margin-top: 3rem;
+    /* margin-top: 7rem; */
 }
 
 .empresas-logo-wrapper-5::after, .empresas-logo-wrapper-10::after {
@@ -543,47 +557,47 @@ input[type=number] {
 }
 
 .empresas-logo-wrapper:hover {
-    border: 3px solid #9b2226;
+    border: 3px solid #01161e;
 }
 
 .empresa-seleccion-1:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-1 .empresas-logo-wrapper {
-    border: 3px solid #FDE9A5;
+    border: 2px solid #9b2226;
 }
 
 .empresa-seleccion-2:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-2 .empresas-logo-wrapper {
-    border: 3px solid #FDE9A5;
+    border: 2px solid #9b2226;
 }
 
 .empresa-seleccion-3:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-3 .empresas-logo-wrapper {
-    border: 3px solid #FDE9A5;
+    border: 2px solid #9b2226;
 }
 
 .empresa-seleccion-4:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-4 .empresas-logo-wrapper {
-    border: 3px solid #FDE9A5;
+    border: 2px solid #9b2226;
 }
 
 .empresa-seleccion-5:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-5 .empresas-logo-wrapper {
-    border: 3px solid #FDE9A5;
+    border: 2px solid #9b2226;
 }
 
 .empresa-seleccion-6:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-6 .empresas-logo-wrapper {
-    border: 3px solid #FDE9A5;
+    border: 2px solid #9b2226;
 }
 
 .empresa-seleccion-7:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-7 .empresas-logo-wrapper {
-    border: 3px solid #FDE9A5;
+    border: 2px solid #9b2226;
 }
 
 .empresa-seleccion-8:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-8 .empresas-logo-wrapper {
-    border: 3px solid #FDE9A5;
+    border: 2px solid #9b2226;
 }
 
 .empresa-seleccion-9:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-9 .empresas-logo-wrapper {
-    border: 3px solid #FDE9A5;
+    border: 2px solid #9b2226;
 }
 
 .empresa-seleccion-10:checked ~ .empresas-flex-wrapper .pagina-principal-seleccion-10 .empresas-logo-wrapper {
-    border: 3px solid #FDE9A5;
+    border: 2px solid #9b2226;
 }
 
 
@@ -591,18 +605,15 @@ input[type=number] {
     width: 8rem;
 }
 
-.logo-10 {
-    background: url(Fenix Images/xm-news-1.svg) center no-repeat;
-    background-size: cover;
-    background-position: 50% 50%; 
-    width: 9rem;
-    height: 9rem;
-}
-
 .nombre-de-empresas-texto {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
+    background-color: none; /*test*/
+    width: 16rem; /*test*/
+    text-align: center; /*test*/
+    padding: 1rem;
+    border: 1px solid #000;
 }
 
 
@@ -610,7 +621,7 @@ input[type=number] {
     width: 100rem;
     min-width: 100%;
     height: 50%;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -619,19 +630,18 @@ input[type=number] {
 .pagina-principal-numero-logos-seleccionados-contenedor {
     width: 15rem;
     height: 30rem;
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-left: 3px solid #434343;
 }
 
 .pagina-principal-numero-logos-seleccionados-wrapper {
     width: 15rem;
-    height: 12rem;
+    height: 14rem;
     /* max-height: 90%; */
-    background-color: grey;
+    background-color: #2A2B38;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -639,12 +649,13 @@ input[type=number] {
 }
 
 .empresas-seleccionadas-titulo {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 0;
     line-height: 2.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
     text-align: center;
+    color: #fff;
+    font-weight: 400;
 }
 
 .empresas-seleccionadas-numero-wrapper {
@@ -659,6 +670,7 @@ input[type=number] {
 
 .empresas-seleccionadas-numero {
     font-size: 2rem;
+    color: #fff;
 }
 
 .pagina-principal-check-icon {
@@ -667,7 +679,7 @@ input[type=number] {
 
 .tercera-pagina-box-2 {
     grid-area: tercerapaginabox2;
-    background-color: green;
+    /* background-color: green; */
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -676,18 +688,23 @@ input[type=number] {
 
 .pagina-principal-dropdown-wrapper {
     width: 52%;
-    height: 100%;
-    background-color: blue;
+    height: 80%;
+    background-color: #2A2B38;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 2rem;
 }
 
 .pagina-principal-dropdown-menu {
     font-size: 1.6rem;
     font-weight: 800;
-    background-color: red;
+    background-color: #e5e5e5;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
     width: 18%;
+    width: 12%;
+    color: #000;
 }
 
 #nombres-usuarios {
@@ -695,9 +712,7 @@ input[type=number] {
     height: 4rem;
     font-size: 1.5rem;
     cursor: pointer;
-    border: 1px solid #FDE9A5;
     outline: none;
-    border-radius: 7px;
 }
 
 .pagina-principal-boton-y-popup-wrapper {
@@ -705,9 +720,10 @@ input[type=number] {
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-    background-color: antiquewhite;
+    background-color: #2A2B38;
     width: 45%;
-    height: 70%;
+    height: 75%;
+    margin-top: 2rem;
 }
 
 .popup-texto {
@@ -721,13 +737,24 @@ input[type=number] {
 
 .usuario-boton {
     font-size: 1.5rem;
-    background-color: #fff;
+    background-color: #01161e;
     width: 9rem;
     padding: 1.2rem;
     text-align: center;
     margin: 0;
-    margin-bottom: -1rem;
+    margin-bottom: -.5rem;
     cursor: pointer;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    border: 1px solid #fff;
+}
+
+.usuario-boton:hover {
+    background-color: #9b2226;
+}
+
+.usuario-boton:active {
+    border: 1px solid transparent;
 }
 
 .usuario-popup-email {
@@ -736,7 +763,6 @@ input[type=number] {
     max-width: 90%;
     outline: none;
     visibility: hidden;
-    border-radius: 7px;
     border: 1px solid #434343;
 }
 
@@ -754,7 +780,7 @@ input[type=number] {
 
 .tercera-pagina-box-3 {
     grid-area: tercerapaginabox3;
-    background-color: orange;
+    background-color: #2E3E46;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -765,7 +791,7 @@ input[type=number] {
 .pagina-principal-dashboard-contenedor {
     width: 60%;
     height: 75%;
-    background-color: gray;
+    background-color: #003049;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -773,20 +799,34 @@ input[type=number] {
 
 .dashboard-titulo {
     background-color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     margin: 0;
+    padding-left: 1rem;
 }
 
 .pagina-principal-dashboard-contenido-wrapper {
     width: 100%;
     height: 88%;
-    background-color: blueviolet;
+    /* background-color: #FDE9A5; */
     overflow-y: scroll;
 }
 
 .grabar-boton {
     height: 14%;
     width: 10rem;
+    cursor: pointer;
+    border: 1px solid #FDE9A5;
+    background-color: #01161e;
+    color: #fff;
+    transition: all .3s;
+}
+
+.grabar-boton:hover {
+    background-color: #333533;
+}
+
+.grabar-boton:active {
+    opacity: 70%;
 }
 
 .dashboard-opciones {
@@ -795,6 +835,7 @@ input[type=number] {
     justify-content: space-between;
     background-color: #fff;
     height: 100%;
+    border: none;
 }
 
 .opciones-texto {
@@ -851,7 +892,27 @@ input.codigo-cliente-input {
 /* Responsiveness */
 @media (min-width: 1100px) {
     .pagina-principal-dropdown-menu {
-        text-align:center;
+        text-align: center;
+    }
+
+    .pagina-principal-dropdown-wrapper {
+        padding-right: 2rem;
+    }
+
+    .pagina-principal-boton-y-popup-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        background-color: #2A2B38;
+        width: 47%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 1230px) {
+    .empresas-logo-wrapper::after {
+        margin-right: -20rem; 
     }
 }
 
@@ -862,7 +923,7 @@ input.codigo-cliente-input {
     
     .contenedor-3-contenido {
         height: 100%;
-        width: min(95%, 110rem);
+        /* width: min(95%, 110rem); */
         /* display: grid;
     
         grid-template-areas: "tercerapaginabox1"
@@ -873,16 +934,16 @@ input.codigo-cliente-input {
                              "tercerapaginabox3"; */
     }
 
+    .tercera-pagina-box-1 {
+        padding-block-end: 19rem;
+    }
+
     .pagina-principal-numero-logos-seleccionados-contenedor {
         width: 12rem;
     }
 
     .pagina-principal-numero-logos-seleccionados-wrapper {
         width: 12rem;
-    }
-
-    .empresas-seleccionadas-titulo {
-        font-size: 1.5rem;
     }
 
     .pagina-principal-dropdown-wrapper {
@@ -896,6 +957,7 @@ input.codigo-cliente-input {
     .pagina-principal-dropdown-menu {
         width: 100%;
         text-align: flex-start;
+        margin-top: -4rem;
     }       
 
     #nombres-usuarios {
@@ -903,18 +965,18 @@ input.codigo-cliente-input {
     }
 
     .pagina-principal-boton-y-popup-wrapper {
-        height: 60%;
-        justify-content: space-between;
+        height: 75%;
     }
 
-    .usuario-boton {
+    /* .usuario-boton {
         margin-top: 7rem;
     }
 
     .popup-texto {
         margin-top: 4rem;
         position: absolute;
-    }
+    } */
+
 
 
 }
@@ -935,7 +997,7 @@ input.codigo-cliente-input {
 
     .contenedor-3-contenido {
         height: 100%;
-        width: min(95%, 110rem);
+        /* width: min(95%, 110rem); */
         display: grid;
     
         grid-template-areas: "tercerapaginabox1"
@@ -950,9 +1012,19 @@ input.codigo-cliente-input {
         padding-block-end: 4rem;
     }
 
+    .pagina-principal-dropdown-menu {
+        margin-top: 0rem;
+        text-align: center;
+    }
+
+    .pagina-principal-dropdown-wrapper {
+        margin-top: 0rem;
+    }
+
     .pagina-principal-boton-y-popup-wrapper {
         height: 60%;
         justify-content: space-between;
+        margin-top: 0rem;
     }
 
     .usuario-boton {
@@ -970,3 +1042,4 @@ input.codigo-cliente-input {
 
 
 /* End of Responsiveness*/
+
